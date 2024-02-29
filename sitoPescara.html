@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; 
+display: grid;
+grid-template-columns: 1fr 3fr 1fr;
+grid-template-areas:
+    'p1   p2  p3';
+    
+
+}
+
+
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.item1 h1 {
+    grid-area: p1;
+}
+#par {
+    grid-area: p2;
+    align-items: center;
+  justify-content: center;
+    
+}
+.item1  p {
+    grid-area: p3;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:</p>
+
+<div class="grid-container">
+  <div class="item1"><h1>Sito turistico</h1><p id = "par"><img src="pesc1.jpeg" alt=""></p><p>Contatti</p></div>
+  <div class="item2"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named">Link1 </a><br>
+    <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named">Link2 </a><br>
+    <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named">Link3 </a><br>
+    <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named">Link4 </a></div>
+  <div class="item3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, cupiditate dignissimos doloremque saepe dolor deserunt, soluta repellendus maiores eum quod distinctio sint ipsam quas necessitatibus blanditiis facere iusto cum. Delectus!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil excepturi quidem impedit. Vitae sunt rem est nostrum sed nesciunt mollitia quis quas accusantium nisi omnis, libero fugiat dolorem incidunt fuga?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi nesciunt veritatis sit obcaecati exercitationem rem autem ut assumenda consequuntur ipsa praesentium eos eveniet doloribus, non quaerat soluta nisi provident?
+  </div>  
+  <div class="item4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo minima, aperiam dolorem molestias ipsum fugit vel enim officiis nobis maxime ipsam quas minus voluptas cupiditate explicabo corporis est asperiores illum!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum, numquam repellat explicabo aliquam laudantium exercitationem dignissimos fugiat, ipsam ducimus assumenda quaerat recusandae vitae animi maiores quasi! Obcaecati, sed et.
+    <img src="pesc.jpeg" alt="">
+  </div>
+  <div class="item5">Footer</div>
+</div>
+
+</body>
+</html>
