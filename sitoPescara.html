@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
 <style>
+   .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
 .item1 { grid-area: header; 
 display: grid;
 grid-template-columns: 1fr 3fr 1fr;
@@ -45,6 +63,15 @@ grid-template-areas:
   padding: 20px 0;
   font-size: 30px;
 }
+@media only screen and (max-width: 600px) {
+.grid-container {
+    display: flex;
+    flex-direction: column;
+}
+.item1 { display: flex; 
+flex-direction: column;
+
+}
 </style>
 </head>
 <body>
@@ -54,7 +81,7 @@ grid-template-areas:
 <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:</p>
 
 <div class="grid-container">
-  <div class="item1"><h1>Sito turistico</h1><p id = "par"><img src="pesc1.jpeg" alt=""></p><p>Contatti</p></div>
+  <div class="item1"><h1>Sito turistico</h1><p id = "par"><img src="pesc1.jpeg" alt=""></p><p><a href = "boostrapdemo.html">Pagina contatti</a></p></div>
   <div class="item2"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named">Link1 </a><br>
     <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named">Link2 </a><br>
     <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named">Link3 </a><br>
@@ -67,7 +94,10 @@ grid-template-areas:
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum, numquam repellat explicabo aliquam laudantium exercitationem dignissimos fugiat, ipsam ducimus assumenda quaerat recusandae vitae animi maiores quasi! Obcaecati, sed et.
     <img src="pesc.jpeg" alt="">
   </div>
-  <div class="item5">Footer</div>
+  <div class="item5">Footer
+    <a href="#" class="fa fa-instagram"></a>
+
+  </div>
 </div>
 
 </body>
